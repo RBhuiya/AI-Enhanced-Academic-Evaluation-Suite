@@ -1,0 +1,5 @@
+{
+  "name": " AI-Enhanced Academic Evaluation Suite Final version",
+  "description": "An intelligent web application for evaluating handwritten exam papers and assignments. It uses AI to perform OCR, check for plagiarism, and generate detailed grade sheets based on a provided marking scheme. Features role-based access for teachers (evaluation) and students (view-only).",
+  "requestFramePermissions": []
+}

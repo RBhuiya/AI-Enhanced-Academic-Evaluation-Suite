@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Enhanced Academic Evaluation Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'brand-bg-dark': '#11071F',
+              'brand-bg-light': '#1e1133',
+              'brand-surface': 'rgba(40, 24, 69, 0.6)',
+              'brand-outline': 'rgba(108, 68, 171, 0.4)',
+              'brand-primary': '#a855f7',
+              'brand-secondary': '#ec4899',
+              'text-primary': '#f3e8ff',
+              'text-secondary': '#a89bbd',
+              'neon-cyan': '#00f6ff',
+            },
+            backdropFilter: {
+              'blur-lg': 'blur(10px)',
+            },
+            boxShadow: {
+              'glow-primary': '0 0 15px rgba(168, 85, 247, 0.4)',
+              'glow-secondary': '0 0 20px rgba(236, 72, 153, 0.5)',
+            },
+          },
+        },
+      }
+    </script>
+    
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-smoothing: grayscale;
+      }
+      .dark body {
+        background-color: #11071F;
+        background-image: linear-gradient(145deg, #11071F 0%, #1e1133 100%);
+      }
+      .light body {
+        background-color: #f3e8ff;
+      }
+      /* Custom scrollbar for a tech feel */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #11071F; }
+      ::-webkit-scrollbar-thumb { background: #a855f7; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #ec4899; }
+
+      @media print {
+        body {
+          background: none;
+        }
+        .print-container {
+          padding: 0;
+          margin: 0;
+          box-shadow: none;
+          border: none;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.5.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
